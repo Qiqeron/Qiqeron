@@ -1,0 +1,18 @@
+# 1 Задание
+
+a = input("ВВЕДИТЕ ДЕЛИМОЕ:")
+b = input("ВВЕДИТЕ ДЕЛИТЕЛЬ:")
+
+m = 1
+if a[0] == "-":
+    m = -m
+if b[0] == "-":
+    m = -m
+
+if b == 0:
+    print("ОШИБКА ПРИ ДЕЛЕНИИ НА НОЛЬ")
+
+if a.replace(".", "", 1).replace("-", "0", 1).isdecimal() and b.replace(".", "", 1).replace("-", "0", 1).isdecimal():
+    print("РЕЗУЛЬТАТ ДЕЛЕНИЯ:", round(float(a) / float(b), 2)   )
+else:
+    print("ВВЕДИТЕ СООТВЕТСТВУЮЩИЕ ЧИСЛА")
